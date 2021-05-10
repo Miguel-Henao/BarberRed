@@ -1,0 +1,233 @@
+*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: arial;
+			background: url('../img/fondo1.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+
+			color: #ffffff;
+		}
+
+		header{
+
+		width: 100%; height: 50px; background-color: rgb(100,0,0);
+	}
+		table, th, td {
+  			border: 1px solid black;
+  			border-collapse: collapse;
+  			padding: 5px;
+		}
+		ul#menu{
+			list-style: none;
+			float: right;
+			margin-right: 2%;
+			margin-top: 10px;
+		}
+		ul#menu li{
+			display: inline-block;
+		}
+		ul#menu li a{
+			display: block;
+			text-decoration: none;
+			color: #ffffff;
+			padding: 5px 10px;
+		}
+		ul#menu li a:hover{
+			background-color: rgb(255,60,60);
+		}
+		
+
+		ul#menu li.items ul{
+			display: none;
+			position:absolute;
+		}
+		ul#menu li.items li {
+			display: block;
+		}
+		ul#menu li.items li a{
+			display: block;
+			background-color: black;
+		}
+		ul#menu li.items li a:hover{
+			
+			background-color: rgb(55,0,0);
+		}
+		ul#menu li.items:hover ul{
+			display: block;
+		}
+		.logo a{
+		float: left;
+		width: 150px;
+		height: 30px;
+		margin-left: 10%;
+		margin-top: 10px;
+		background-color: rgb(99,0,0);background: url('../img/logo.svg');
+		background-repeat: no-repeat;
+		background-size:contain;
+		display: block;
+	}
+
+		.logo a h1{
+			text-indent: -999px;
+
+		}
+
+		/*Menu Perfil*/		
+
+		ul#perfil{
+			list-style: none;
+			float: right;
+			margin-right: 5%;
+			margin-top: 10px;
+		}
+		ul#perfil li{
+			display: inline-block;
+			background-color: rgb(100,0,0);
+		}
+		ul#perfil li a{
+
+			color: #ffffff;
+			text-decoration: none;
+		}
+		ul#perfil li a:hover{
+			background: #000000;
+		}
+
+		ul#perfil li.items ul{
+			display: none;
+			position: absolute;
+		}
+		ul#perfil li.items li{
+			display: block;
+		}
+
+		ul#perfil li.items:hover ul{
+			display: block;
+
+		}
+		ul#perfil li.items ul a{
+			display: block;
+
+
+		}
+		ul#perfil li.items ul a:hover{
+			background-color: black;
+
+		}
+
+			form{
+			width: 20%;
+			height: auto;
+			padding: 40px;
+			margin: auto;
+			background-color: rgb(55,0,0);
+			border-radius: 20px;
+			color: #ffffff;
+			
+		}
+		input[type="submit"]{
+			background-color: rgb(100,0,0);
+			border: none;
+			padding: 5px 10px;
+			outline: none;
+			color: #ffffff;
+
+		}
+		main.principal{
+			width: 80%;
+			height: auto;
+			margin: auto;
+		}
+		.perfil-foto img{
+			border-radius: 60%;
+			
+			display: block;
+		}
+/*SLIDER*/
+		.container {
+			position: relative;
+		  }
+		  
+		  /* Hide the images by default */
+		  .mySlides {
+			display: none;
+		  }
+		  
+		  /* Add a pointer when hovering over the thumbnail images */
+		  .cursor {
+			cursor: pointer;
+		  }
+		  
+		  /* Next & previous buttons */
+		  .prev,
+		  .next {
+			cursor: pointer;
+			position: absolute;
+			top: 40%;
+			width: auto;
+			padding: 16px;
+			margin-top: -50px;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+			-webkit-user-select: none;
+		  }
+		  
+		  /* Position the "next button" to the right */
+		  .next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		  }
+		  
+		  /* On hover, add a black background color with a little bit see-through */
+		  .prev:hover,
+		  .next:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		  }
+		  
+		  /* Number text (1/3 etc) */
+		  .numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		  }
+		  
+		  /* Container for image text */
+		  .caption-container {
+			text-align: center;
+			background-color: #222;
+			padding: 2px 16px;
+			color: white;
+		  }
+		  
+		  .row:after {
+			content: "";
+			display: table;
+			clear: both;
+		  }
+		  
+		  /* Six columns side by side */
+		  .column {
+			float: left;
+			width: 16.66%;
+		  }
+		  
+		  /* Add a transparency effect for thumnbail images */
+		  .demo {
+			opacity: 0.6;
+		  }
+		  
+		  .active,
+		  .demo:hover {
+			opacity: 1;
+		  }
